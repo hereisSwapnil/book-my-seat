@@ -6,6 +6,8 @@ Book My Seat is a simple, concurrent seat booking system implemented in Go. It d
 ## Architecture
 The project follows **Clean Architecture** principles to ensure separation of concerns:
 
+[![image.png](https://i.postimg.cc/L8TJRZSB/image.png)](https://postimg.cc/688Wfqyy)
+
 - **Domain Layer (`internal/domain`)**: Contains core entities (`Seat`, `SeatStatus`) and business logic. It has no external dependencies.
 - **Service Layer (`internal/service`)**: Orchestrates business use cases (`SeatService`). Handles concurrency and transaction-like operations.
 - **Transport Layer (`internal/transport/http`)**: Manages HTTP handlers, routing, and request/response marshaling.
